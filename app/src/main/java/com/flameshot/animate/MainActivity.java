@@ -23,14 +23,22 @@ public class MainActivity extends AppCompatActivity {
     {
         if (yes)
         {
-            imageView_bart.animate().alpha(0.0f).setDuration(2000);
-            imageView_homer.animate().alpha(1f).setDuration(2000);
+            imageView_bart.animate().translationXBy(-1200f).setDuration(2000);
+            imageView_bart.animate().translationYBy(-1200f).setDuration(2000);
+            imageView_bart.animate().rotation(2800f).setDuration(2000);
+            //imageView_homer.animate().alpha(1f).setDuration(2000);
             yes = false;
         }
         else
         {
+            imageView_bart.animate().translationXBy(1200f).setDuration(2000);
+            imageView_bart.animate().translationYBy(1200f).setDuration(2000);
+            imageView_bart.animate().rotation(0f).setDuration(2000);
+            /*
+            imageView_bart.animate().translationXBy(1000f).setDuration(2000);
             imageView_bart.animate().alpha(1f).setDuration(2000);
             imageView_homer.animate().alpha(0f).setDuration(2000);
+            */
             yes = true;
         }
 
