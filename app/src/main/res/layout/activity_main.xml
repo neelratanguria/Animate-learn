@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:contentDescription="Bart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="fade"
+        android:src="@drawable/bart" />
+    <ImageView
+        android:id="@+id/imgView_homer"
+        android:contentDescription="Homer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="fade"
+        android:src="@drawable/homer_new"
+        android:scaleType="center"
+        android:alpha="0"/>
+
+</android.support.constraint.ConstraintLayout>
